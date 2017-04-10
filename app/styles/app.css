@@ -1,0 +1,146 @@
+.inline-block {
+	display: inline-block;
+}
+
+#app {
+}
+
+#game-panel {
+	width: 80%;
+}
+
+#controls {
+	height: 100px;
+	background-color: lightcoral;
+}
+
+#game-field {
+	background-color: black;
+	height: 500px;
+	overflow: hidden;
+}
+
+#score-panel {
+	float: right;
+	width: 20%;
+	background-color: lightgreen;
+	min-height: 600px;
+}
+
+#score-panel > h2 {
+	text-align: center;
+	border-bottom: 2px solid lightseagreen;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding-bottom: 20px;
+}
+
+#total-score {
+	margin-right: 20px;
+	margin-left: 20px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+
+#total-score > table {
+	width: 100%;
+}
+
+#total-score > table > thead {
+	font-size: 20px;
+}
+
+#total-score > table > tbody > tr {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	border-bottom: 2px dashed darkblue;
+}
+
+#controls-panel {
+	display: inline-block;
+	width: 60%;
+	float: left;
+	height: 100px;
+}
+
+#current-score {
+	display: inline-block;
+	width: 40%;
+	float: right;
+	background-color: #2e6da4;
+	height: 100px;
+}
+
+#current-score > div > div {
+	color: white;
+	text-align: center;
+	font-size: 65px;
+}
+
+.ship-object {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height:100px;
+}
+
+.ship-object > div {
+	cursor: pointer;
+}
+
+.ship-object > div.circle {
+	width: 100%;
+	height: 100%;
+	background: red;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.ship-object > div.square {
+	width: 100%;
+	height: 100%;
+	background: yellow;
+}
+
+.ship-object > div.triangle {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid green;
+}
+
+.ship-object > div.rhombus {
+	width: 70%;
+	height: 70%;
+	margin-top: 30%;
+	margin-left: 48%;
+	background: indigo;
+	/* Rotate */
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	/* Rotate Origin */
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	/*margin: 60px 0 10px 310px;*/
+}
+
+
+.ship-object > div.circle:hover,
+.ship-object > div.square:hover,
+.ship-object > div.rhombus:hover
+{
+	background: white;
+}
+
+.ship-object > div.triangle:hover {
+	border-bottom-color: white;
+}
